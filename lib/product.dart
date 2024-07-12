@@ -69,7 +69,7 @@ class ProductsPage extends StatelessWidget {
                                   alignment: AlignmentDirectional.topEnd,
                                   children: [
                                     Container(
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                           color: Colors.grey,
                                           borderRadius: BorderRadius.only(
                                               topLeft: Radius.circular(18),
@@ -123,7 +123,7 @@ class ProductsPage extends StatelessWidget {
                                                   TextDecoration.lineThrough,
                                               fontWeight: FontWeight.w400,
                                               fontSize: 11,
-                                              color: Color(0xFF004182)),
+                                              color: const Color(0xFF004182)),
                                         ),
                                       ],
                                     ),
