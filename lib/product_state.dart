@@ -1,6 +1,6 @@
 abstract class ProductState {}
 
-class ProductInitState extends ProductState {}
+class ProductsInitialState extends ProductState {}
 
 class ProductLoadingState extends ProductState {}
 
