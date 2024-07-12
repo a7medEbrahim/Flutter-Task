@@ -1,8 +1,7 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
-import 'package:fluttertask/service/strings.dart';
+import 'package:fluttertask/core/constant/strings.dart';
 
 class DioHelper {
   static late Dio dio;
@@ -24,11 +23,5 @@ class DioHelper {
       responseHeader: false,
       error: true,
     ));
-  }
-}
-
-class Utility {
-  static myPrintX(object) async {
-    if (!kReleaseMode) print(object);
   }
 }

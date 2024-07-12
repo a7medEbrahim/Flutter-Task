@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:fluttertask/app_images.dart';
-import 'package:fluttertask/product_cubit.dart';
-import 'package:fluttertask/product_state.dart';
+import 'package:fluttertask/core/constant/app_icons.dart';
+import 'package:fluttertask/presentation/bloc/product_cubit.dart';
+import 'package:fluttertask/presentation/bloc/product_state.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ProductsPage extends StatelessWidget {

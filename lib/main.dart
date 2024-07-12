@@ -1,12 +1,15 @@
+// lib/main.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fluttertask/presentation/bloc/observer.dart';
 import 'package:fluttertask/routes.dart';
-import 'package:fluttertask/service/dio_helper.dart';
-import 'package:fluttertask/service/observer.dart';
+
+import 'injection_container.dart' as di;
 
 void main() async {
-  DioHelper.init();
+  WidgetsFlutterBinding.ensureInitialized();
+  await di.init();
   Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }
@@ -14,7 +17,6 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(

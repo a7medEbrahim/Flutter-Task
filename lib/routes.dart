@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertask/product.dart';
+import 'package:fluttertask/presentation/pages/product_page.dart';
 import 'package:go_router/go_router.dart';
 
 class RoutesName {

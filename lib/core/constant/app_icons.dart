@@ -1,6 +1,4 @@
-import 'package:fluttertask/service/strings.dart';
-
-class AppImages {}
+import 'package:fluttertask/core/constant/strings.dart';
 
 class AppIcons {
   static const String logoIcon = "${Strings.baseIconPath}/logo.svg";

@@ -1,20 +1,14 @@
-class ProductModel {
-  String title;
-  String description;
-  String category;
-  double price;
-  double discountPercentage;
-  double rating;
-  String thumbnail;
+import 'package:fluttertask/domain/entities/Product.dart';
 
+class ProductModel extends Product {
   ProductModel({
-    required this.title,
-    required this.description,
-    required this.category,
-    required this.price,
-    required this.discountPercentage,
-    required this.rating,
-    required this.thumbnail,
+    required super.title,
+    required super.description,
+    required super.category,
+    required super.price,
+    required super.discountPercentage,
+    required super.rating,
+    required super.thumbnail,
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
